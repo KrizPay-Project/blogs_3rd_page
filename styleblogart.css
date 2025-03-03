@@ -32,7 +32,7 @@ nav a {
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 nav a:hover {
-    color: rgb(118, 127, 247);
+    color: rgb(240, 122, 255);
     border-bottom: 2px solid black;
 }
 
@@ -181,17 +181,23 @@ hr {
 }
 .tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
+    justify-content: center;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .tags button {
     border: 1px solid #ccc;
     background: transparent;
     padding: 8px 10px;
     cursor: pointer;
-    width: 100%;
     border-radius: 5px;
     font-size: 14px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    width: auto;
+    white-space: nowrap;
 }
 .tags button:hover {
     background-color: black;
@@ -252,95 +258,40 @@ hr {
 @media screen and (max-width: 1024px) {
     main {
         margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
     }
     
     .content1, .quote {
         margin-left: auto;
         margin-right: auto;
+        padding: 0 20px; 
     }
     
     .details {
         margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
         gap: 40px;
     }
     
     .tags-share {
         margin-left: auto;
         margin-right: auto;
+        padding: 10px 20px; 
     }
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-    }
-    
-    nav, .social-icons {
+    main, .content1, .quote, .details, .tags-share, .description1 {
+        padding: 0 20px;
         width: 100%;
-        justify-content: center;
+        box-sizing: border-box;
     }
-    
-    h1 {
-        font-size: 28px;
-    }
-    
-    .gallery {
-        flex-direction: column;
-    }
-    
-    .image-container {
+        .details {
+        padding: 0 20px;
+        margin: 30px auto;
         width: 100%;
-    }
-    
-    .image-container img {
-        height: auto !important;
-        width: 100% !important;
-        margin: 0 !important;
-    }
-    
-    .navigation {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-    }
-    
-    .footer-bottom {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    h1 {
-        font-size: 24px;
-    }
-    
-    .author {
-        flex-direction: column;
-        gap: 5px;
-    }
-    
-    .details {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .tags-share {
-        flex-direction: column;
-    }
-    
-    .tags {
-        width: 100%;
-    }
-    
-    .share {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
+        box-sizing: border-box;
     }
 }
