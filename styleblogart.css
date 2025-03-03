@@ -252,21 +252,27 @@ hr {
 @media screen and (max-width: 992px) {
     main {
         margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
     }
     
     .content1, .quote {
         margin-left: auto;
         margin-right: auto;
+        padding: 0 20px;
     }
     
     .details {
         margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
         gap: 40px;
     }
     
     .tags-share {
         margin-left: auto;
         margin-right: auto;
+        padding: 0 20px;
     }
 }
 
