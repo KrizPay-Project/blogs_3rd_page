@@ -280,7 +280,7 @@ hr {
     header {
         flex-direction: column;
         gap: 15px;
-        padding: 20px;
+        padding:0 20px;
     }
     
     nav, .social-icons {
@@ -334,6 +334,8 @@ hr {
     }
     
     .details {
+        padding: 0 20px;
+        margin: 30px auto;
         flex-direction: column;
         gap: 15px;
     }
